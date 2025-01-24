@@ -1,52 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EagleTech Devs</title>
-  <!-- React and ReactDOM -->
-  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-slide-in {
+    animation: slideIn 2.5s ease-out forwards;
+  }
+</style>
 </head>
 <body>
-  <div id="root"></div>
-
-  <script type="text/babel">
-    // Header Component
-    function Header() {
-      return (
-      <header>
-        <div className="bg-black h-[20vh] flex items-center justify-between px-4 text-white">
-          <img src="EAGLETECHlogo.png" alt="EagleTech Logo" width="50" />
-          <h1 className="text-lg font-bold">EagleTech Devs</h1>
+  
+  <header>
+        <div class="bg-black md:h-[40vh] h-[30vh] flex items-center justify-between px-4 text-white">
+          <img src="EAGLETECHlogo.png"  class="w-50 md:w-100"alt="EagleTech Logo" width="150" />
+          <h1 class="text-lg font-bold">EagleTech Devs</h1>
         </div>
-      </header>
-      );
-    }
+      
+   <section class="bg-[url(Hero.png)] bg-cover h-[75vh] md:h-[150vh] text-white">
+     <div class="flex flex-col p-10 justify-center py-20" >
+       <p class="font-medium text-2xl font-mono">Welcome to</p>
+       <h2 class="font-bold text-6xl md:text-9xl animate-slide-in">EAGLETECH</h2>
+       <h2 class="font-bold text-6xl md:text-9xl animate-slide-in">DEVS</h2>
+     </div>
+   </section>
+  </header>
+  <main class="">
+  <section class="p-10">
+    <h2 class="font-bold text-5xl text-blue-900 text-center">Who Are We?</h2>
+    <div class="flex justify-center gap-5 md:flex-row flex-col">
+      <img src="web.jpeg" class="md:w-[50vw] w-250">
+      <div>  
+      <p class="md:text-xl">EagleTech Devs is a dynamic team of tech
+      enthusiasts brought together by a shared history and
+      a passion for innovation now united in building cutting-edge
+      solutions in full-stack web development, cybersecurity,
+      and web designs.</p> 
+      <p class="md:text-xl">We are more than just a group of developers — we are 
+  innovators driven to solve problems, build solutions, 
+  and create a lasting impact.</p></div>
+      </div> </section>
+  <section class="p-10 bg-blue-950"> 
+    <h2 class="font-bold text-5xl text-white p-5 text-center">What We Do</h2>
+    <div class="flex justify-center gap-5 md:flex-row text-blue-200 flex-col"> 
+     <img src="secure.jpeg" class="md:w-[50vw] w-250 md:hidden">  
+    <p class="md:text-xl">At EagleTech Devs, we thrive on collaboration, creativity,
+      and a commitment to excellence. We believe in the power of collaboration 
+  and the strength of community.
+      Whether it's designing seamless responsive user interfaces,
+      fortifying systems against cyber threats, or
+      developing robust backend architectures, we aim to 
+      make technology work smarter for everyone.</p>
+      <img src="secure.jpeg" class="md:w-[50vw] w-250 hidden md:flex"></div> </section>
 
-    // Footer Component
-    function Footer() {
-      return (
-        <footer className="bg-gray-800 text-white text-center py-4">
+    <section class="p-10">
+      <h2 class="font-bold text-5xl text-blue-900 text-center"> Our Values</h2>
+  <div class="flex justify-center gap-5 md:flex-row flex-col-reverse">
+     
+     <img src="responsive.jpeg" class="md:w-[50vw] w-250">
+
+     <p class="md:text-xl p-5">As a team, we value growth, community, and integrity. 
+       Each member brings unique expertise, ensuring we deliver
+      innovative solutions that align with industry 
+      standards and client needs. We are not just developers; 
+      we are Eagles, soaring higher together to redefine
+      the possibilities of technology.
+Join us on this journey as we transform ideas into reality. 
+      At EagleTech Devs, the future is always within reach.</p>
+    
+ </div>    
+  </section>
+  
+ 
+
+  
+  <section class="p-10 bg-blue-950"> 
+    <h2 class="font-semibold text-5xl text-blue-500">Why Choose Us?</h2> 
+  <p class="text-white"> What sets us apart is our shared vision: to grow as 
+    individuals while making a difference together. We are 
+    dedicated 
+  to delivering high-quality, forward-thinking projects 
+  that showcase our skills and push the boundaries of 
+  technology.We not 
+    only enhance our expertise but also demonstrate our 
+    commitment to excellence, creativity, and reliability.
+     As Eagles, we’re always aiming higher, redefining 
+    what’s possible with technology. Let’s build the future together.
+</p>
+  </section>
+    
+    <section class="md:p-10 p-5">
+      <h2 class="font-bold text-5xl text-blue-800 p-5 text-center"> The Eagles of EagleTech Devs</h2>
+      <div class="flex flex-wrap justify-center gap-5">
+        <div class="w-[40vw] rounded-2xl p-3 bg-blue-400">
+          <img src="Ik.jpg" class="rounded-md">
+          <p class="font-semibold text-3xl text-blue-800"> Asiegbu Victory </p>
+          <p class="text-xl">Cybersecurity professional and Web Developer </p>
+          <a class="text-white text-3xl"href=""><i class= "bi bi-linkedin "></i></a>
+        </div>
+        
+        <div class="w-[40vw] rounded-2xl p-3 bg-blue-400">
+          <img src="Nze.jpeg" class="rounded-md">
+          <p class="font-semibold text-2xl text-blue-800"> Nzechinyere Goodness</p>
+          <p class="">Fullstack Developer and Automotive Designer</p>
+           <a class="text-white text-3xl"href=""><i class= "bi bi-linkedin "></i></a>
+        </div>
+        
+        <div class="w-[40vw] rounded-2xl p-3 bg-blue-400">
+          <img src="Me.jpg" class="rounded-md">
+          <p class="font-semibold text-3xl text-blue-800"> Chukwudi Chikamji</p>
+          <p class=""> Frontend Developer, Web Designer and Graphics Designer</p>
+           <a class="text-white text-3xl"
+             href="https://www.linkedin.com/in/chikamji-chukwudi-30a32232b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+             <i class= "bi bi-linkedin "></i></a>
+        </div>
+        
+        <div class="w-[40vw] rounded-2xl p-3 bg-blue-400">
+          <img src="Stefy.jpg" class="rounded-md">
+          <p class="font-semibold text-2xl text-blue-800"> Onyeaghala Stephanie</p>
+          <p class=""> Fullstack Developer</p>
+           <a class="text-white text-3xl"href=""><i class= "bi bi-linkedin "></i></a>
+        </div>
+          
+        <div class="w-[40vw] rounded-2xl p-3 bg-blue-400">
+          <img src="Henry.jpg" class="rounded-md">
+          <p class="font-semibold text-3xl text-blue-800"> Pedro Henry U.</p>
+          <p class="text-xl"> Cybersecurity Professional</p>
+           <a class="text-white text-3xl"href=""><i class= "bi bi-linkedin "></i></a>
+        </div>
+        
+      </div>
+    </section>
+</main>
+  <section>
+    <h1 class="font-bold text-7xl text-blue-900 text-center"> Portfolio</h1>
+  </section>
+        <footer class="bg-gray-800 text-white text-center py-4">
           <p>&copy; 2024 EagleTech Devs. All rights reserved.</p>
         </footer>
-      );
-    }
-
-    // App Component
-    function App() {
-      return (
-        <>
-          <Header />
-          <Footer />
-        </>
-      );
-    }
-
-    // Render the App Component
-    ReactDOM.createRoot(document.getElementById("root")).render(<App />);
-  </script>
 </body>
 </html>
